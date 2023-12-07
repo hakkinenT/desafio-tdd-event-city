@@ -33,7 +33,7 @@ public class ControllerExceptionHandler {
         StandardError err = new StandardError();
         err.setTimestamp(Instant.now());
         err.setStatus(status.value());
-        err.setError("Resource not found");
+        err.setError("Integrity Violation");
         err.setMessage(e.getMessage());
         err.setPath(request.getRequestURI());
 
